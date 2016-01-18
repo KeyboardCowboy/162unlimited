@@ -5,6 +5,10 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+# Local Config
+# To serve the local site, run:
+# jekyll serve --config _config.yml,_config-local.yml
+
 # Site settings
 title: 162 Unlimited LLC
 email: your-email@domain.com
@@ -17,9 +21,8 @@ twitter_username: ChrisAlbrecht
 github_username:  keyboardcowboy
 
 # URLs
-baseurl: "/162unlimited" # the subpath of your site, e.g. /blog
-url: "http://www.162unlimited.com" # the base hostname & protocol for your site
-host: "http://www.162unlimited.com"
+url: "http://keyboardcowboy.github.io"
+baseurl: "/162unlimited"
 permalink: pretty
 
 # Build settings
