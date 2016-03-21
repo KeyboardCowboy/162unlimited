@@ -14,3 +14,9 @@
   padding: 1em;
   border-radius: .5em;
 }
+
+@include gt(700px) {
+  .page__main {
+    margin: 0 4em;
+  }
+}
