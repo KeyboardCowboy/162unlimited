@@ -640,6 +640,27 @@ body {
   margin: .5em 0;
 }
 
+@media screen and (min-width: 700px) {
+  .page__footer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .footer__block {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin: 0 1em;
+  }
+
+  .footer__block--legal {
+    text-align: right;
+  }
+}
 .page__header {
   padding: 1em;
   text-align: center;
@@ -649,6 +670,7 @@ body {
 
 .page__logo {
   width: 10vw;
+  max-width: 50px;
   vertical-align: middle;
 }
 

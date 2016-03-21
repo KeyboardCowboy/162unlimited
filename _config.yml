@@ -19,7 +19,7 @@ github_username:  keyboardcowboy
 
 # URLs
 url: "http://keyboardcowboy.github.io"
-baseurl: "/162unlimited"
+baseurl: "/162unlimited/"
 permalink: pretty
 
 # Build settings
