@@ -1,0 +1,24 @@
+- twitter:
+  name: Twitter
+  url: https://twitter.com/ChrisAlbrecht
+  icon: images/twitter.svg
+
+- github:
+  name: GitHub
+  url: https://github.com/keyboardcowboy
+  icon: images/github.svg
+
+- lanyrd:
+  name: Lanyrd
+  url: http://lanyrd.com/profile/chrisalbrecht
+  icon: images/lanyrd.svg
+
+#- lullabot:
+#  name: Lullabot.com
+#  url: https://www.lullabot.com/who-we-are/chris-albrecht
+#  icon: images/icon-lullabot.svg
+
+- drupal:
+  name: Drupal.org
+  url: https://www.drupal.org/u/keyboardcowboy
+  icon: images/drupal.svg

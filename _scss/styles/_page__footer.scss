@@ -1,0 +1,17 @@
+.page__footer {
+  color: $text-diminished;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 1em;
+}
+
+.footer__block--social__desc {
+  @include invisible;
+}
+
+.footer__block--legal {
+  font-size: .6rem;
+  text-align: center;
+  margin: .5em 0;
+}

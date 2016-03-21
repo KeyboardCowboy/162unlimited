@@ -1,38 +1,16 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
+<footer class="page__footer">
+  <div class="footer__block footer__block--social">
+    <span class="footer__block--social__desc">Find Chris on</span>
+    <ul class="social-links">
+    {% for network in site.data.social %}
+    <li class="social-links__item">
+      <a href="{{ network.url }}" class="social-links__item-link social-links__item-link--{{ network.name | slugify }}">
+        {% include_relative {{ network.icon }} %}
+        <span class="social-links__item-text">{{ network.name }}</span>
+      </a>
+    </li>
+    {% endfor %}
+    </ul>
   </div>
-
+  <div class="footer__block footer__block--legal">Copyright {{ site.time | date: '%Y' }} &copy; 162 Unlimited LLC</div>
 </footer>

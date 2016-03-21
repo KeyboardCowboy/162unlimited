@@ -1,0 +1,46 @@
+.social-links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.social-links__item {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+  text-align: center;
+}
+
+.social-links__item-link {
+  display: inline-block;
+  padding: .5em;
+  outline: none;
+
+  svg {
+    width: 2rem;
+    height: 2rem;
+    transition: .2s fill ease-in-out;
+
+    fill: $text-diminished;
+  }
+}
+
+.social-links__item-text {
+  @include invisible;
+}
+
+@include focus(social-links__item-link--twitter) {
+  svg {fill: $twitter;}
+}
+@include focus(social-links__item-link--github) {
+  svg {fill: $github;}
+}
+@include focus(social-links__item-link--lullabot) {
+  svg {fill: $lullabot;}
+}
+@include focus(social-links__item-link--lanyrd) {
+  svg {fill: $lanyrd;}
+}
+@include focus(social-links__item-link--drupal-org) {
+  svg {fill: $drupal;}
+}
