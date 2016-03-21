@@ -13,10 +13,10 @@
   url: http://lanyrd.com/profile/chrisalbrecht
   icon: images/lanyrd.svg
 
-#- lullabot:
-#  name: Lullabot.com
-#  url: https://www.lullabot.com/who-we-are/chris-albrecht
-#  icon: images/icon-lullabot.svg
+- lullabot:
+  name: Lullabot.com
+  url: https://www.lullabot.com/who-we-are/chris-albrecht
+  icon: images/lullabot_head.svg
 
 - drupal:
   name: Drupal.org

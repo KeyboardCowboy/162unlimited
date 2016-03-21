@@ -723,6 +723,8 @@ body {
 .social-links__item-link svg {
   width: 2rem;
   height: 2rem;
+}
+.social-links__item-link svg path {
   transition: .2s fill ease-in-out;
   fill: #ccc;
 }
@@ -736,28 +738,28 @@ body {
   overflow: hidden;
 }
 
-.social-links__item-link--twitter:hover svg,
-.social-links__item-link--twitter:focus svg {
+.social-links__item-link--twitter:hover svg path,
+.social-links__item-link--twitter:focus svg path {
   fill: #00ACED;
 }
 
-.social-links__item-link--github:hover svg,
-.social-links__item-link--github:focus svg {
+.social-links__item-link--github:hover svg path,
+.social-links__item-link--github:focus svg path {
   fill: #0D2636;
 }
 
-.social-links__item-link--lullabot:hover svg,
-.social-links__item-link--lullabot:focus svg {
-  fill: #BA282D;
+.social-links__item-link--lullabot-com:hover svg path,
+.social-links__item-link--lullabot-com:focus svg path {
+  fill: #E13526;
 }
 
-.social-links__item-link--lanyrd:hover svg,
-.social-links__item-link--lanyrd:focus svg {
+.social-links__item-link--lanyrd:hover svg path,
+.social-links__item-link--lanyrd:focus svg path {
   fill: #3C80CA;
 }
 
-.social-links__item-link--drupal-org:hover svg,
-.social-links__item-link--drupal-org:focus svg {
+.social-links__item-link--drupal-org:hover svg path,
+.social-links__item-link--drupal-org:focus svg path {
   fill: #28A9E0;
 }
 

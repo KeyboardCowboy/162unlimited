@@ -19,9 +19,11 @@
   svg {
     width: 2rem;
     height: 2rem;
-    transition: .2s fill ease-in-out;
 
-    fill: $text-diminished;
+    path {
+      transition: .2s fill ease-in-out;
+      fill: $text-diminished;
+    }
   }
 }
 
@@ -30,17 +32,17 @@
 }
 
 @include focus(social-links__item-link--twitter) {
-  svg {fill: $twitter;}
+  svg path {fill: $twitter;}
 }
 @include focus(social-links__item-link--github) {
-  svg {fill: $github;}
+  svg path {fill: $github;}
 }
-@include focus(social-links__item-link--lullabot) {
-  svg {fill: $lullabot;}
+@include focus(social-links__item-link--lullabot-com) {
+  svg path {fill: $lullabot;}
 }
 @include focus(social-links__item-link--lanyrd) {
-  svg {fill: $lanyrd;}
+  svg path {fill: $lanyrd;}
 }
 @include focus(social-links__item-link--drupal-org) {
-  svg {fill: $drupal;}
+  svg path {fill: $drupal;}
 }
