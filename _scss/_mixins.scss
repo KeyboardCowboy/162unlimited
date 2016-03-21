@@ -21,3 +21,22 @@
     @content;
   }
 }
+
+@mixin center($dir) {
+  @if ($dir == 'x') {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @else if ($dir == 'y') {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @else {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}

@@ -15,10 +15,37 @@
   display: inline-block;
   padding: .5em;
   outline: none;
+  position: relative;
+  color: $text-main;
+
+  &:visited {
+    color: $text-main;
+  }
+
+  &:hover, &:focus {
+    svg {
+      margin-top: -1em;
+    }
+
+    .social-links__item-text {
+      @include center(x);
+
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background: #fff;
+      border: 1px solid;
+      border-radius: .25em;
+      opacity: .8;
+      padding: 0 .5em;
+      height: auto;
+    }
+  }
 
   svg {
     width: 2rem;
     height: 2rem;
+    transition: .2s margin ease-in-out;
 
     path {
       transition: .2s fill ease-in-out;
@@ -29,20 +56,43 @@
 
 .social-links__item-text {
   @include invisible;
+  opacity: .1;
+  transition: .2s opacity ease-in-out;
+  font-size: .5em;
 }
 
 @include focus(social-links__item-link--twitter) {
   svg path {fill: $twitter;}
+  .social-links__item-text {
+    color: $twitter;
+    border-color: $twitter;
+  }
 }
 @include focus(social-links__item-link--github) {
   svg path {fill: $github;}
+  .social-links__item-text {
+    color: $github;
+    border-color: $github;
+  }
 }
-@include focus(social-links__item-link--lullabot-com) {
+@include focus(social-links__item-link--lullabot) {
   svg path {fill: $lullabot;}
+  .social-links__item-text {
+    color: $lullabot;
+    border-color: $lullabot;
+  }
 }
 @include focus(social-links__item-link--lanyrd) {
   svg path {fill: $lanyrd;}
+  .social-links__item-text {
+    color: $lanyrd;
+    border-color: $lanyrd;
+  }
 }
-@include focus(social-links__item-link--drupal-org) {
+@include focus(social-links__item-link--drupal) {
   svg path {fill: $drupal;}
+  .social-links__item-text {
+    color: $drupal;
+    border-color: $drupal;
+  }
 }

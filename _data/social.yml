@@ -14,11 +14,11 @@
   icon: images/lanyrd.svg
 
 - lullabot:
-  name: Lullabot.com
+  name: Lullabot
   url: https://www.lullabot.com/who-we-are/chris-albrecht
   icon: images/lullabot_head.svg
 
 - drupal:
-  name: Drupal.org
+  name: Drupal
   url: https://www.drupal.org/u/keyboardcowboy
   icon: images/drupal.svg

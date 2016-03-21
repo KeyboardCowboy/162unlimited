@@ -719,10 +719,34 @@ body {
   display: inline-block;
   padding: .5em;
   outline: none;
+  position: relative;
+  color: #444;
+}
+.social-links__item-link:visited {
+  color: #444;
+}
+.social-links__item-link:hover svg, .social-links__item-link:focus svg {
+  margin-top: -1em;
+}
+.social-links__item-link:hover .social-links__item-text, .social-links__item-link:focus .social-links__item-text {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  border: 1px solid;
+  border-radius: .25em;
+  opacity: .8;
+  padding: 0 .5em;
+  height: auto;
 }
 .social-links__item-link svg {
   width: 2rem;
   height: 2rem;
+  transition: .2s margin ease-in-out;
 }
 .social-links__item-link svg path {
   transition: .2s fill ease-in-out;
@@ -736,31 +760,59 @@ body {
   width: 1px;
   height: 1px;
   overflow: hidden;
+  opacity: .1;
+  transition: .2s opacity ease-in-out;
+  font-size: .5em;
 }
 
 .social-links__item-link--twitter:hover svg path,
 .social-links__item-link--twitter:focus svg path {
   fill: #00ACED;
 }
+.social-links__item-link--twitter:hover .social-links__item-text,
+.social-links__item-link--twitter:focus .social-links__item-text {
+  color: #00ACED;
+  border-color: #00ACED;
+}
 
 .social-links__item-link--github:hover svg path,
 .social-links__item-link--github:focus svg path {
   fill: #0D2636;
 }
+.social-links__item-link--github:hover .social-links__item-text,
+.social-links__item-link--github:focus .social-links__item-text {
+  color: #0D2636;
+  border-color: #0D2636;
+}
 
-.social-links__item-link--lullabot-com:hover svg path,
-.social-links__item-link--lullabot-com:focus svg path {
+.social-links__item-link--lullabot:hover svg path,
+.social-links__item-link--lullabot:focus svg path {
   fill: #E13526;
+}
+.social-links__item-link--lullabot:hover .social-links__item-text,
+.social-links__item-link--lullabot:focus .social-links__item-text {
+  color: #E13526;
+  border-color: #E13526;
 }
 
 .social-links__item-link--lanyrd:hover svg path,
 .social-links__item-link--lanyrd:focus svg path {
   fill: #3C80CA;
 }
+.social-links__item-link--lanyrd:hover .social-links__item-text,
+.social-links__item-link--lanyrd:focus .social-links__item-text {
+  color: #3C80CA;
+  border-color: #3C80CA;
+}
 
-.social-links__item-link--drupal-org:hover svg path,
-.social-links__item-link--drupal-org:focus svg path {
+.social-links__item-link--drupal:hover svg path,
+.social-links__item-link--drupal:focus svg path {
   fill: #28A9E0;
+}
+.social-links__item-link--drupal:hover .social-links__item-text,
+.social-links__item-link--drupal:focus .social-links__item-text {
+  color: #28A9E0;
+  border-color: #28A9E0;
 }
 
 /*# sourceMappingURL=main.css.map */
