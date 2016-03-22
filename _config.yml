@@ -19,7 +19,7 @@ github_username:  keyboardcowboy
 
 # URLs
 url: "http://162unlimited.com"
-baseurl: "/"
+baseurl: ""
 permalink: pretty
 
 # Build settings
