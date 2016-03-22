@@ -18,8 +18,8 @@ twitter_username: ChrisAlbrecht
 github_username:  keyboardcowboy
 
 # URLs
-url: "http://keyboardcowboy.github.io"
-baseurl: "/162unlimited/"
+url: "http://162unlimited.com"
+baseurl: "/"
 permalink: pretty
 
 # Build settings
