@@ -1,3 +1,13 @@
+@mixin social-icon($name, $color) {
+  @include focus(social-links__item-link--#{$name}) {
+    svg path {fill: $color;}
+    .social-links__item-text {
+      color: $color;
+      border-color: $color;
+    }
+  }
+}
+
 .social-links {
   margin: 0;
   padding: 0;
@@ -39,6 +49,7 @@
       opacity: .8;
       padding: 0 .5em;
       height: auto;
+      position: absolute;
     }
   }
 
@@ -61,38 +72,8 @@
   font-size: .5em;
 }
 
-@include focus(social-links__item-link--twitter) {
-  svg path {fill: $twitter;}
-  .social-links__item-text {
-    color: $twitter;
-    border-color: $twitter;
-  }
-}
-@include focus(social-links__item-link--github) {
-  svg path {fill: $github;}
-  .social-links__item-text {
-    color: $github;
-    border-color: $github;
-  }
-}
-@include focus(social-links__item-link--lullabot) {
-  svg path {fill: $lullabot;}
-  .social-links__item-text {
-    color: $lullabot;
-    border-color: $lullabot;
-  }
-}
-@include focus(social-links__item-link--lanyrd) {
-  svg path {fill: $lanyrd;}
-  .social-links__item-text {
-    color: $lanyrd;
-    border-color: $lanyrd;
-  }
-}
-@include focus(social-links__item-link--drupal) {
-  svg path {fill: $drupal;}
-  .social-links__item-text {
-    color: $drupal;
-    border-color: $drupal;
-  }
-}
+@include social-icon(twitter, $twitter);
+@include social-icon(github, $github);
+@include social-icon(lullabot, $lullabot);
+@include social-icon(lanyrd, $lanyrd);
+@include social-icon(drupal, $drupal);

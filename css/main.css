@@ -415,6 +415,20 @@ body {
   color: #444;
 }
 
+.page__wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+.page__wrapper:after {
+  content: '';
+  height: 50px;
+  display: block;
+}
+
+.page__footer {
+  height: 50px;
+}
+
 /**
  * Syntax highlighting styles
  */
@@ -619,10 +633,10 @@ body {
 
 .page__footer {
   color: #ccc;
-  position: fixed;
   width: 100%;
   bottom: 0;
   margin-bottom: 1em;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .footer__block--social__desc {
@@ -734,7 +748,7 @@ body {
   margin-top: -1em;
 }
 .social-links__item-link:hover .social-links__item-text, .social-links__item-link:focus .social-links__item-text {
-  position: absolute;
+  position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -747,6 +761,7 @@ body {
   opacity: .8;
   padding: 0 .5em;
   height: auto;
+  position: absolute;
 }
 .social-links__item-link svg {
   width: 2rem;

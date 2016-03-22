@@ -11,3 +11,18 @@ body {
   height: 100%;
   color: $text-main;
 }
+
+.page__wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+
+  &:after {
+    content: '';
+    height: 50px;
+    display: block;
+  }
+}
+
+.page__footer {
+  height: 50px;
+}
