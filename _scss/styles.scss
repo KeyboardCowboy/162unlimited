@@ -1,0 +1,111 @@
+@import "bourbon/bourbon";
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Tajawal');
+@import "tools/vars";
+
+* {
+  margin: 0;
+  font-family: $font-secondary;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(70% + 1vw);
+  color: white;
+  background-image: url('../images/spiral.jpg');
+  background-position: center;
+  background-size: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-primary;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin: 1em 0;
+}
+
+header {
+  padding: 2em;
+  background-color: purple;
+  color: white;
+  display: none;
+}
+
+main {
+  flex: 1 0 auto;
+  position: relative;
+  padding: {
+    top: $content-gutter;
+    bottom: $content-gutter;
+  }
+}
+
+.container {
+  padding: {
+    left: $content-gutter;
+    right: $content-gutter;
+  }
+}
+
+.site-title {
+  text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+  background: linear-gradient(to right, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0) 100%);
+  padding: 2em $content-gutter;
+}
+
+.tagline {
+  position: relative;
+  padding-top: 10px;
+
+  &:before {
+    content: '';
+    height: 1px;
+    overflow: hidden;
+    background: linear-gradient(to right, #eee 0%, transparent 62%);
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.highlight {
+  padding: 1em;
+  background: rgba(black, .6);
+  color: white;
+  margin: 2em auto;
+  border-radius: .25em;
+  text-align: center;
+  max-width: 38em;
+
+  a {
+    color: #4294f0;
+  }
+}
+
+footer {
+  flex-shrink: 0;
+  border-top: 1px solid #666;
+  padding: 2em;
+  color: #666;
+  font-size: 0.6em;
+  text-align: center;
+  background: rgba(0,0,0,.8);
+}

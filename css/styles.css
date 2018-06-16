@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro|Tajawal");
+* {
+  margin: 0;
+  font-family: "Tajawal", sans-serif; }
+
+html, body {
+  height: 100%; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: calc(70% + 1vw);
+  color: white;
+  background-image: url("../images/spiral.jpg");
+  background-position: center;
+  background-size: auto; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Source Sans Pro", sans-serif; }
+
+h1 {
+  font-size: 3em; }
+
+a {
+  text-decoration: none; }
+  a:hover, a:focus {
+    text-decoration: underline; }
+
+p {
+  margin: 1em 0; }
+
+header {
+  padding: 2em;
+  background-color: purple;
+  color: white;
+  display: none; }
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+.container {
+  padding-left: 5%;
+  padding-right: 5%; }
+
+.site-title {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.62) 0%, transparent 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.62) 0%, transparent 100%);
+  padding: 2em 5%; }
+
+.tagline {
+  position: relative;
+  padding-top: 10px; }
+  .tagline:before {
+    content: '';
+    height: 1px;
+    overflow: hidden;
+    background: -webkit-linear-gradient(left, #eee 0%, transparent 62%);
+    background: linear-gradient(to right, #eee 0%, transparent 62%);
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0; }
+
+.highlight {
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  margin: 2em auto;
+  border-radius: .25em;
+  text-align: center;
+  max-width: 38em; }
+  .highlight a {
+    color: #4294f0; }
+
+footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-top: 1px solid #666;
+  padding: 2em;
+  color: #666;
+  font-size: 0.6em;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8); }
+
+/*# sourceMappingURL=styles.css.map */
